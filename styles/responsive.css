@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+    .headings h1{
+        font-size: 5vw;
+    }
+    
+    .headings h5{
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: gilroy;
+  src: url(../fonts/gilroy\ \(1\).otf);
+}
+@font-face {
+  font-family: mazius;
+  src: url(../fonts/font.otf);
+}
+
+.headings {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30vh;
+}
+
+.headings h5 {
+  font-size: 0.9vw;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.headings h1 {
+  font-size: 3vw;
+}
+.headings .w {
+  font-family: mazius;
+  font-weight: 200;
+  letter-spacing: 0.15vw;
+}
+.bs {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  color: #fff;
+  font-family: gilroy;
+  z-index: 9;
+}
+.container{
+  background-color: #0f0d0d;
+}
+.hero{
+  min-height: 100vh;
+  width: 100%;
+}
+.nav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+}
+.navlist li {
+  color: white;
+  list-style: none;
+  font-family: gilroy;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.navlist {
+  display: flex;
+  gap: 0.8vw;
+}
+.nav img{
+  height: 50px;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #14cf93;
+}
+.Home{
+  border-bottom: 2px solid white;
+}
+.hero-content{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-heading h1{
+  color: white;
+  font-size: 10vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.hero-heading h2{
+  color: white;
+  font-size: 6vw;
+  font-family:'Montserrat', sans-serif ;
+  font-weight: 300;
+  margin-left: 8vw;
+}
+.hero-heading span{
+  font-family: mazius;
+  font-weight: 100;
+  letter-spacing: 0.3vw;
+  color: #27ffba;
+}
+.page2{
+  height: 100vh;
+  width: 100%;
+}
