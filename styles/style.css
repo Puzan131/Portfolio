@@ -113,6 +113,23 @@ html {
   color: #27ffba;
 }
 .page2{
-  height: 100vh;
+  height: 120vh;
   width: 100%;
+}
+.hero video{
+  width: 60%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 5vw;
+}
+.cursor{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  background-color: #27ffba;
+  z-index: 999;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: all linear 0.1s;
 }
