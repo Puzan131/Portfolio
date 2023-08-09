@@ -112,10 +112,7 @@ html {
   letter-spacing: 0.3vw;
   color: #27ffba;
 }
-.page2{
-  height: 120vh;
-  width: 100%;
-}
+
 .hero video{
   width: 60%;
   position: relative;
@@ -132,4 +129,33 @@ html {
   border-radius: 50%;
   mix-blend-mode: difference;
   transition: all linear 0.1s;
+}
+.page-2{
+  height: 120vh;
+  width: 100%;
+}
+.page-2 .work{
+  width: 90vw;
+  font-family: gilroy;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50vw;
+  margin-left: 5vw;
+  border-bottom: 2px solid #161616;
+  padding: 2vw;
+}
+
+.page-2 h1{
+  font-size: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 5vw 10vw;
+}
+.page-2 h1 span{
+  font-family: mazius;
+  color: #14cf93;
+}
+
+.w1{
+  border-top: 2px solid #161616;
 }

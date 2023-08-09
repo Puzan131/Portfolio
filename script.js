@@ -40,44 +40,42 @@ function navborder() {
   });
 }
 navborder();
-function cursor(){
+function cursor() {
   let cursor = document.querySelector(".cursor");
   let main = document.querySelector(".main");
-  main.addEventListener("mousemove",(dets)=>{
-   cursor.style.left = dets.x + "px";
-   cursor.style.top = dets.y + "px";
-  })
+  main.addEventListener("mousemove", (dets) => {
+    cursor.style.left = dets.x + "px";
+    cursor.style.top = dets.y + "px";
+  });
 }
 cursor();
 
 let tl = gsap.timeline();
-tl.from(".bs .headings h1",{
-  x:"100%",
-  duration:1,
-})
-tl.from(".bs .headings h5",{
-  x:"100%",
-  delay:-1,
-  duration:1,
-})
-tl.to(".bs",{
-  height:0,
-  delay:1.5,
-  duration:1,
-  ease:Circ.easeInOut,
-})
-tl.to(".bs .headings h1",{
-  y:"-100%",
-  delay:-1,
-  duration:0.5
-})
-tl.to(".bs .headings h5",{
-  y:"-500%",
-  delay:-0.5,
-  duration:0.5
-})
-
-
+tl.from(".bs .headings h1", {
+  x: "100%",
+  duration: 1,
+});
+tl.from(".bs .headings h5", {
+  x: "100%",
+  delay: -1,
+  duration: 1,
+});
+tl.to(".bs", {
+  height: 0,
+  delay: 1.5,
+  duration: 1,
+  ease: Circ.easeInOut,
+});
+tl.to(".bs .headings h1", {
+  y: "-100%",
+  delay: -1,
+  duration: 0.5,
+});
+tl.to(".bs .headings h5", {
+  y: "-500%",
+  delay: -0.5,
+  duration: 0.5,
+});
 
 gsap.to(".hero-heading h1", {
   x: -80,
@@ -102,7 +100,7 @@ gsap.to(".hero-heading h2", {
   },
 });
 gsap.to(".hero video", {
-  width:"80%",
+  width: "80%",
   scrollTrigger: {
     trigger: ".headings h1",
     scroller: ".main",
@@ -111,3 +109,35 @@ gsap.to(".hero video", {
     scrub: 2,
   },
 });
+gsap.to(".container", {
+  backgroundColor: "white",
+  scrollTrigger: {
+    trigger: ".hero video",
+    scroller: ".main",
+    start: "top 150%",
+    end: "top 0%",
+    scrub: 2,
+  },
+});
+function work() {
+  let cursor = document.querySelector(".cursor");
+  document.querySelectorAll(".work").forEach((work) => {
+    work.addEventListener("mouseenter", () => {
+      cursor.style.height = "250px";
+      cursor.style.width = "300px";
+      cursor.style.borderRadius = "0";
+      let img = work.getAttribute("data-image");
+      cursor.style.background = `url(${img})`;
+      cursor.style.backgroundSize = "contain";
+      cursor.style.mixBlendMode = "normal";
+    });
+    work.addEventListener("mouseleave", () => {
+      cursor.style.height = "15px";
+      cursor.style.width = "15px";
+      cursor.style.borderRadius = "50%";
+      cursor.style.background = "#27ffba";
+      cursor.style.mixBlendMode = "difference";
+    });
+  });
+}
+work();
