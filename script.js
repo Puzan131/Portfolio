@@ -130,6 +130,51 @@ gsap.to(".container", {
     scrub: 2,
   },
 });
+gsap.to(".page-3 .css",{
+  rotate:"13deg",
+  x:"18vw",
+  scrollTrigger:{
+    scroller:".main",
+    trigger:".page-3 h1",
+    start:"top 150%",
+    end:"top 0%",
+    scrub:2
+  }
+})
+gsap.to(".page-3 .js",{
+  rotate:"-13deg",
+  x:"-18vw",
+  scrollTrigger:{
+    scroller:".main",
+    trigger:".page-3 h1",
+    start:"top 150%",
+    end:"top 0%",
+    scrub:2
+  }
+})
+gsap.to(".page-3 .react",{
+  rotate:"40deg",
+  x:"40vw",
+  scrollTrigger:{
+    scroller:".main",
+    trigger:".page-3 h1",
+    start:"top 150%",
+    end:"top 0%",
+    scrub:2
+  }
+})
+gsap.to(".page-3 .git",{
+  rotate:"-40deg",
+  x:"-40vw",
+  scrollTrigger:{
+    scroller:".main",
+    trigger:".page-3 h1",
+    start:"top 150%",
+    end:"top 0%",
+    scrub:2
+  }
+})
+
 function work() {
   let cursor = document.querySelector(".cursor");
   let ctn = document.querySelector(".container");
