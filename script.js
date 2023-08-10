@@ -84,8 +84,7 @@ gsap.to(".page-2 .card", {
     scroller: ".main",
     start: "top 150%",
     end: "top 0%",
-    markers: true,
-    scrub:2,
+    scrub: 2,
   },
 });
 
@@ -93,7 +92,7 @@ gsap.to(".hero-heading h1", {
   x: -80,
 
   scrollTrigger: {
-    trigger: ".hero h2",
+    trigger: ".headings h1",
     scroller: ".main",
     start: "top 20%",
     end: "top 0%",
