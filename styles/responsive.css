@@ -6,4 +6,18 @@
     .headings h5{
         font-size: 3vw;
     }
+    .page-2{
+        overflow-x: hidden;
+    }
+    .page-2 .work{
+        padding: 10vw 0;
+    }
+    .page-2 h1{
+        margin:10vw 0;
+    }
+    .card{
+        height: 300px;
+        width: 200px;
+        margin-top: 45vw;
+    }
 }

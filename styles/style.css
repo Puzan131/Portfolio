@@ -143,6 +143,8 @@ html {
   margin-left: 5vw;
   border-bottom: 2px solid #161616;
   padding: 2vw;
+  position: relative;
+  z-index: 5;
 }
 
 .page-2 h1{
@@ -158,4 +160,18 @@ html {
 
 .w1{
   border-top: 2px solid #161616;
+}
+.card{
+  height: 450px;
+  width: 320px;
+  box-shadow: 1px 2px 10px black;
+  border-radius: 10px;
+  background-image: url(../media/card.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 12vw;
+  position: absolute;
+  right: 15vw;
+  transform: rotate(-7deg);
 }

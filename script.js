@@ -76,12 +76,24 @@ tl.to(".bs .headings h5", {
   delay: -0.5,
   duration: 0.5,
 });
+gsap.to(".page-2 .card", {
+  rotate: "7deg",
+
+  scrollTrigger: {
+    trigger: ".page-2 h1",
+    scroller: ".main",
+    start: "top 150%",
+    end: "top 0%",
+    markers: true,
+    scrub:2,
+  },
+});
 
 gsap.to(".hero-heading h1", {
   x: -80,
 
   scrollTrigger: {
-    trigger: ".headings h1",
+    trigger: ".hero h2",
     scroller: ".main",
     start: "top 20%",
     end: "top 0%",
@@ -121,6 +133,7 @@ gsap.to(".container", {
 });
 function work() {
   let cursor = document.querySelector(".cursor");
+  let ctn = document.querySelector(".container");
   document.querySelectorAll(".work").forEach((work) => {
     work.addEventListener("mouseenter", () => {
       cursor.style.height = "250px";
