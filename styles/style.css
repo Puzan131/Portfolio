@@ -50,8 +50,8 @@ html {
   font-family: gilroy;
   z-index: 9;
 }
+
 .container{
-  height: 100%;
   background-color: #0f0d0d;
 }
 .hero{
@@ -132,7 +132,7 @@ html {
   transition: all linear 0.1s;
 }
 .page-2{
-  height: 120vh;
+  height: 100vh;
   width: 100%;
 }
 .page-2 .work{
@@ -175,6 +175,9 @@ html {
   position: absolute;
   right: 15vw;
   transform: rotate(-7deg);
+}
+.page-3{
+  min-height: 150vh;
 }
 
 .page-3  .skill-head{
@@ -243,6 +246,74 @@ color: transparent;
   z-index: 0;
 }
 .footer{
-  height: 50vh;
+  min-height: 120vh;
   width: 100%;
+  background-color: #231f2b;
+
+}
+.footer img{
+  position: absolute;
+  z-index: 1;
+  bottom:3%;
+  scale: 1.15;
+  left: 30%;
+}
+.footer .f-head{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+  color: white;
+  text-align: center;
+  padding-top: 2vw;
+  z-index: 2;
+  position: relative;
+}
+.footer .f-head span{
+  font-family: 'mazius';
+  color: #14cf93;
+}
+::-webkit-scrollbar-thumb{
+  color: #14cf93;
+}
+.contact{
+  margin: 10vw 5vw;
+}
+.footer .contact a{
+  font-family: 'Montserrat';
+  font-size: 0.9vw;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+.footer .contact a span{
+  opacity: 0.8;
+  font-weight: 300;
+}
+.sm i{
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1vw;
+}
+.sm{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  padding-top: 1vw;
+  margin-bottom: 5vw;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.github:hover{
+  padding-left:0.5vw;
+  padding-right: 0.5vw;
+}
+.fb:hover{
+  padding-left:0.5vw;
+  padding-right: 0.5vw;
+}
+.upwork:hover{
+  padding-left:0.5vw;
+  padding-right: 0.5vw;
 }

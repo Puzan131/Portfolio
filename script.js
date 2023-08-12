@@ -136,7 +136,7 @@ gsap.to(".page-3 .css",{
   scrollTrigger:{
     scroller:".main",
     trigger:".page-3 h1",
-    start:"top 150%",
+    start:"top 180%",
     end:"top 0%",
     scrub:2
   }
@@ -172,6 +172,18 @@ gsap.to(".page-3 .git",{
     start:"top 150%",
     end:"top 0%",
     scrub:2
+  }
+})
+gsap.to(".footer img",{
+  bottom:"0%",
+  scale:1,
+  scrollTrigger:{
+    scroller:".main",
+    trigger:" .footer img",
+    start:"top 150%",
+    end:"top 0%",
+    scrub:2,
+    markers:true
   }
 })
 

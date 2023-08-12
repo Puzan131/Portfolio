@@ -20,4 +20,15 @@
         width: 200px;
         margin-top: 45vw;
     }
+    .s-card{
+        height: 150px;
+        width: 100px;
+    }
+    .page-3 h1{
+        margin-top: -100vw;
+        margin-bottom: 30vw;
+    }
+    .footer{
+        height: 100vh;
+    }
 }
